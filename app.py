@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS # needs to be installed in pythonanywhere
 from config import num_keys, select_keys
 from dev_lap import ConcreteBeam, RebarDevLap
 
