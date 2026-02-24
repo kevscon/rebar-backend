@@ -1,7 +1,7 @@
 import math
 from config import props_path
 from unit_conversion import return_ft_in
-from rebar import RebarLayout
+from rebar import RebarProperties
 
 def calc_cb(bar_diameter: float, cover: float, spacing: float):
     """
@@ -100,7 +100,7 @@ class ConcreteBeam:
         self.f_c = f_c
         self.f_y = f_y
         self.conc_density = conc_density
-        rebar = RebarLayout(bar_size, props_path)
+        rebar = RebarProperties(bar_size, props_path)
         self.bar_diameter = rebar.bar_diameter
         self.bar_area = rebar.bar_area
 
